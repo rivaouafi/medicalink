@@ -1,0 +1,583 @@
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header1 {
+ display: flex;
+ flex-wrap: wrap;
+
+ font-size: 1em;
+ color: black;
+ background-color: skyblue;
+
+
+ border: 1px solid black;
+ padding: 2px;
+}
+.header2 {
+ display: flex;
+ flex-wrap: wrap;
+
+  font-size:4em;
+  color: white;
+ background-color: #0099FF;
+ border: 0px solid black;
+ padding: 3px;
+}
+
+ .footer {
+  display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+ background-color: #0099FF;
+ border: 1px solid black;
+ padding: 10px;
+
+ text-align: center;
+ font-size: 1em;
+ color: white;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ }
+
+/* Six buttons with code link to some pages in this project */
+ .button-group {
+ display: flex;
+ flex-wrap: wrap;
+ background-image: url('usa1.png');
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+ }
+
+ .button {
+ display: inline-block;
+ padding: 5px;
+ margin: 5px;
+ background-color: #CCCCCC;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: black;
+ text-align: center;
+ text-decoration: none;
+ }
+
+  .buttonm-group {
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100px;
+
+ justify-content: center;
+ align-items: center;
+ margin-top: 3px;
+ }
+
+ .buttonm {
+
+  display: inline-block;
+ padding: 5px;
+ margin: 5px;
+ background-color: #CCCCCC;
+
+  border: 1px solid black;
+ border-radius: 3px;
+ font-size: 1em;
+ color: black;
+ text-align: center;
+ text-decoration: none;
+ }
+
+/* Fixed background */
+ body {
+
+   background-color: #FFFFFF;
+   background-image: url('medicalink.png');
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
+   background-size: 100% 100%;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+
+    }
+
+
+
+      .logo {
+            font-size: 25px;
+            font-family: 'Sriracha', cursive;
+            color: #000;
+            text-decoration: none;
+        }
+        .nav-items a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 20px;
+        }
+        /* Styles for main content */
+        .intro {
+            /* Add your background image here */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("your-image-url.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* Other styles for intro section */
+        }
+
+                .footerm {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #302f49;
+            padding: 10px;
+            color: #fff;
+        }
+
+              /* Style the container */
+        .image-container {
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 0px solid skyblue; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .image-content {
+             display: flex;
+ flex-wrap: wrap;
+
+
+        }
+
+
+
+           /* Style the container */
+        .text-container {
+
+
+            width: 400px; /* Adjust the width as needed */
+            height: 300px; /* Set the desired height */
+            overflow: auto; /* Add scroll bar when content exceeds container height */
+            background-color: transparent; /* White background */
+            border: 1px solid #ccc; /* Optional border for visual clarity */
+            padding: 3px; /* Add some padding for readability */
+        }
+        /* Style the text inside the container */
+        .text-content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333; /* Optional text color */
+        }
+
+
+
+
+                /* Container for the carousel */
+        .carousel-container {
+            background-color: skyblue;
+            width: 100%;
+             height: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Image carousel */
+        .carousel {
+            display: flex;
+            animation: slide 60s infinite linear;
+        }
+        .carousel img {
+            width: 100%;
+             height: 40px;
+            border: 1px solid blue;
+               padding: 1px;
+             margin: 6px;
+            height: auto;
+        }
+        /* Navigation buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: 1px solid cyan;
+            outline: none;
+            border-radius: 3px;
+        }
+        .carousel-btn.left {
+            left: 0;
+        }
+        .carousel-btn.right {
+            right: 0;
+        }
+
+
+         .carousel-btn:hover {
+          background-color: rgba(135, 206, 235, 0.8);
+}
+
+
+
+
+  /*slider imgs*/
+
+.slider-container {
+overflow: auto;
+
+    width: 100%;
+height: 100%
+border: 1px solid ; color: black;
+}
+
+.slider {
+
+    display: flex;
+    animation: slide 60s infinite linear;
+
+}
+
+.slider img {
+
+
+    width: 100%;
+    height: auto;
+
+}
+
+@keyframes slide {
+
+
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+a:hover {
+    background-color: cyan;
+}
+
+
+
+    .button:hover {
+  background-color: skyblue; /* Button color on hover */
+}
+
+
+
+
+
+
+
+     #audio-player {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+    h4 {
+     position: relative;
+     font-size: 6em;
+     letter-spacing: 15px;
+     color: black;
+     text-transform: uppercase;
+     width: 100%;
+     text-align: center;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+     line-height: 0.74em
+     outline: none;
+     animation: animate 6s linear infinite;
+
+
+
+   }
+
+
+   h4 {
+
+     position: relative;
+     font-size: 8em;
+     letter-spacing: 20px;
+     color: black;
+     text-transform: uppercase;
+     width: 100%;
+     text-align: center;
+     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+     line-height: 0.74em
+     outline: none;
+     animation: animate 6s linear infinite;
+
+   }
+
+
+
+
+       .container6 {
+           width: 70%;
+           height: 250px;
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+
+       .container6 img {
+           width: 10%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 10px;
+           border: 2px solid white;
+           transition: all ease-in-out 0.5s;
+       }
+       .container6 img:hover {
+           width: 25%;
+       }
+
+
+
+
+
+
+       .text {
+background: linear-gradient(
+to right,rgba(0, 168, 253), red 30%, blue);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: gradient 3s linear infinite; }
+@keyframes gradient {
+0% { background-position: 0% 75%;}
+50% { background-position: 100% 50%;}
+100% { background-position: 0% 70%;}
+}
+
+
+
+    .chat-container {
+            max-width: 500px;
+            margin: 3px auto;
+            background-color: #007bff;
+            border-radius: 10px;
+            box-shadow: 0 0 3px blue;
+            overflow: hidden;
+        }
+
+        .chat-box {
+            height: 100px;
+            overflow-y: scroll;
+            padding: 3px;
+             background-color: white;
+              box-shadow: 0 0 3px blue;
+        }
+
+        .message {
+            background-color: white;
+            margin-bottom: 3px;
+            border: 1px solid skyblue;
+             box-shadow: 0 0 3px blue;
+             padding: 3px;
+
+
+        }
+
+        .avatar {
+           width: 50px;
+    height: 50px;
+    margin-right: 3px;
+    border-radius: 50%;
+     border: 1px solid red;
+
+    background-image: url('riva123');
+        }
+
+        .user-message {
+            display: flex;
+            align-items: center;
+               background-color: white;
+                border: 1px solid skyblue;
+        }
+
+        .virtual-message {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+         .virtual1-message {
+               width: 150px;
+    height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+               background-repeat: repeat;
+   background-size: 100% 100%;
+             background-image: url('rus11.jpg');
+              border: 1px solid red;
+        }
+
+        .input-container {
+            display: flex;
+            padding: 3px;
+            background-color: #007bff;
+        }
+
+        .user-input {
+            flex-grow: 1;
+            border: none;
+            border-radius: 20px;
+            padding: 6px;
+            margin-right: 3px;
+        }
+
+        .send-button {
+            border: none;
+            background-color: white;
+            color: blue;
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 3px;
+            cursor: pointer;
+
+
+        }
+          .send-button:hover {
+  background-color: salmon; /* Button color on hover */
+}
+            button:hover {
+  background-color: salmon; /* Button color on hover */
+}
+
+
+         /* Basic styling for the container */
+        .avatar-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3px;
+        }
+
+           .container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3px;
+     border-radius: 20px;
+}
+
+button {
+   border: none;
+            background-color: white;
+            color: blue;
+             border: 1px solid red;
+            border-radius: 10px;
+            padding: 3px;
+            cursor: pointer;
+}
+
+.username-display {
+
+    margin-top: 3px;
+    text-align: center;
+    font-size: 40px;
+     border: 1px solid red;
+}
+
+  .profile-container {
+        text-align: center;
+    }
+    #profile-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 3px;
+         border: 0px solid red;
+    }
+
+
+
+
+
+
+ /* Flexible layout responsive design */
+
+ .header1 {
+ font-size: 0.5em;
+ padding: 2px;
+ }
+ /* Big red header with red border */
+ .header2 {
+ font-size: 4em;
+ padding: 2px;
+ }
+ /* Six buttons with code link to some pages in this project */
+ .button-group {
+ margin-top: 3px;
+ }
+ .button {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+  .buttonm-group {
+ margin-top: 3px;
+ }
+ .buttonm {
+ padding: 3px;
+ margin: 3px;
+ font-size: 1em;
+ }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+
+  padding: 5px;
+}
+.column img {
+
+  width: 100%;
+  height: auto;
+
+      }
+@media screen and (max-width: 320px) {
+  .column {
+
+    width: 100%;
+  }
+
+
+}
